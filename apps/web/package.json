@@ -1,0 +1,41 @@
+{
+  "name": "@memsync/web",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3000",
+    "build": "next build",
+    "start": "next start --port 3000",
+    "check-types": "next typegen && tsc --noEmit"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^7.2.3",
+    "@memsync/db": "*",
+    "@memsync/shared": "*",
+    "@memsync/ui": "*",
+    "@next/env": "^16.2.4",
+    "@polar-sh/nextjs": "^0.9.5",
+    "@polar-sh/sdk": "^0.47.0",
+    "@t3-oss/env-nextjs": "^0.13.11",
+    "lucide-react": "^1.8.0",
+    "next": "16.2.4",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "svix": "^1.59.0",
+    "zod": "^4.4.2"
+  },
+  "devDependencies": {
+    "@memsync/typescript-config": "*",
+    "@tailwindcss/postcss": "^4.2.4",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "tailwindcss": "^4.2.4",
+    "typescript": "^6.0.3"
+  },
+  "overrides": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3"
+  }
+}

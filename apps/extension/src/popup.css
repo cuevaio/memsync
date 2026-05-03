@@ -1,0 +1,21 @@
+@import "@memsync/ui/styles.css";
+
+html,
+body {
+  width: 400px;
+  height: 560px;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background: #f6f3ee;
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}

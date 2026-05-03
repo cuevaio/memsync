@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Memory Sync Panel",
+  "version": "0.1.0",
+  "description": "View and sync memories between Claude and ChatGPT.",
+  "permissions": ["storage", "tabs", "alarms"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Memory Sync",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://claude.ai/*", "https://chatgpt.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": ["https://claude.ai/*", "https://chatgpt.com/*", "http://localhost:3000/*"],
+  "web_accessible_resources": [
+    {
+      "resources": ["page-bridge.js"],
+      "matches": ["https://claude.ai/*", "https://chatgpt.com/*"]
+    }
+  ]
+}

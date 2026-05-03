@@ -1,0 +1,7 @@
+node_modules
+.turbo
+apps/*/.next
+apps/*/dist
+packages/db/data
+.env
+.env.*.local
